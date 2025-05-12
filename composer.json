@@ -1,0 +1,34 @@
+{
+  "name": "rustem-kaimolla/kz-currency-rates",
+  "description": "PHP-библиотека для получения курсов валют с НБ РК",
+  "type": "library",
+  "author": "Rustem Kaimolla",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Currency\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.1",
+    "guzzlehttp/guzzle": "^7.9"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.0"
+  },
+  "config": {
+    "platform": {
+      "php": "8.1"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "Рус",
+      "email": "your@email.kz"
+    }
+  ]
+}
