@@ -5,13 +5,13 @@
 ![Packagist](https://img.shields.io/packagist/v/rustem-kaimolla/kz-currency-rates)
 ![Downloads](https://img.shields.io/packagist/dt/rustem-kaimolla/kz-currency-rates)
 
-**Легковесная PHP-библиотека** для получения курсов валют с официального API Национального Банка Казахстана.
+**Lightweight PHP library** for getting exchange rates from the official API of the National Bank of Kazakhstan.
 
-📡 Источник: [https://nationalbank.kz/rss/get_rates.cfm?fdate=dd.mm.YYYY](https://nationalbank.kz/rss/get_rates.cfm?fdate=dd.mm.YYYY)
+📡 Source: [https://nationalbank.kz/rss/get_rates.cfm?fdate=dd.mm.YYYY](https://nationalbank.kz/rss/get_rates.cfm?fdate=dd.mm.YYYY)
 
 ---
 
-## 🚀 Установка
+## 🚀 Installation
 
 ```bash
 composer require rusdev/kz-currency-rates
@@ -19,15 +19,15 @@ composer require rusdev/kz-currency-rates
 
 ---
 
-## 🧱 Стек
+## 🧱 Stack
 
 - PHP 8.1+
 - Guzzle HTTP client
-- PSR-4 автозагрузка
+- PSR-4 autoload
 
 ---
 
-## 📦 Быстрый старт
+## 📦 Quick start
 
 ```php
 use Currency\Requests\RateRequestBuilder;
@@ -52,17 +52,17 @@ foreach ($rates as $rate) {
 
 ---
 
-## 📌 Получение конкретной валюты
+## 📌 Receiving a specific currency
 
 ```php
 $usd = $fetcher->getRate('USD');
 
-echo "Курс доллара: {$usd->rate} ₸";
+echo "USD/KZT: {$usd->rate} ₸";
 ```
 
 ---
 
-## 🧠 Фильтрация основных валют (Specification)
+## 🧠 Filtering major currencies (Specification)
 
 ```php
 use Currency\Filters\MajorCurrencySpecification;
@@ -78,13 +78,13 @@ foreach ($majorRates as $rate) {
 
 ---
 
-## 🧪 Тесты
+## 🧪 Tests
 
 ```bash
 composer test
 ```
 
-Покрытие тестами:
+Test Coverage:
 - XmlRateParser
 - RateRequestBuilder
 - CurrencyRateDTO
@@ -93,6 +93,6 @@ composer test
 
 ---
 
-## 📄 Лицензия
+## 📄 License
 
-MIT — используй свободно.
+MIT.
